@@ -18,14 +18,14 @@ public class SectionDAO {
              Session session = sessionFactory.getCurrentSession()) {
 
             Transaction transaction = session.beginTransaction();
-            session.persist(section);
+            session.merge(section);
             transaction.commit();
         }
     }
 
     // Получение информации о секции
     public Section getSection(int id) {
-        Section section = new Section();
+        Section section;
 
         try (SessionFactory sessionFactory =
                      new Configuration()

@@ -19,7 +19,7 @@ public class ChildrenDAO {
              Session session = sessionFactory.getCurrentSession()) {
 
             Transaction transaction = session.beginTransaction();
-            session.persist(child);
+            session.merge(child);
             transaction.commit();
         }
     }
@@ -27,7 +27,7 @@ public class ChildrenDAO {
     // Получение информации и ребенке
     public Child getChild(int id) {
 
-        Child child = new Child();
+        Child child;
 
         try (SessionFactory sessionFactory =
                      new Configuration()

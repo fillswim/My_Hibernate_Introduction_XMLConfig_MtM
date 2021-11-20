@@ -12,17 +12,17 @@ public class Test {
         ChildrenDAO childrenDAO = new ChildrenDAO();
 
         // Сохранение новой секции с детьми в ней
-        Child child1 = new Child("Pete", 10);
-        Child child2 = new Child("Nina", 15);
-        Child child3 = new Child("Nick", 13);
-
-        Section section = new Section("Chess");
-
-        section.addChildToSection(child1);
-        section.addChildToSection(child2);
-        section.addChildToSection(child3);
-
-        sectionDAO.saveSection(section);
+//        Child child1 = new Child("Pete", 10);
+//        Child child2 = new Child("Nina", 15);
+//        Child child3 = new Child("Nick", 13);
+//
+//        Section section = new Section("Chess");
+//
+//        section.addChildToSection(child1);
+//        section.addChildToSection(child2);
+//        section.addChildToSection(child3);
+//
+//        sectionDAO.saveSection(section);
 
         // Сохранение ребенка и секция, в которые ох ходит
 //        Child child = new Child("Rose", 14);
@@ -36,6 +36,14 @@ public class Test {
 //        child.addSectionToChild(section3);
 //
 //        childrenDAO.saveChild(child);
+
+        // Изменение секции
+//        Section section = sectionDAO.getSection(1);
+//        System.out.println(section);
+//        section.setName("Math");
+//        System.out.println(section);
+//        sectionDAO.saveSection(section);
+
 
         // Получение информации о секции и о детях, которые в ней занимаются
 //        Section section = sectionDAO.getSection(1);
